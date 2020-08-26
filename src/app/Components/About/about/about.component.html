@@ -1,1 +1,26 @@
-<p>about works!</p>
+     <div class="about" data-aos="fade-left"  data-aos-duration="1500">
+         <h1>ABOUT</h1>
+         <div class="about-bar"></div>
+     </div>
+     <div class="row">
+        <div class="col-xl-6 mt-3"  data-aos="fade-right"  data-aos-duration="1500">
+            <div class="user-info">
+                <img class="imageRounded" src="../../../../assets/Images/bryan.jpg"  />
+                <h1>WHO AM I?</h1>
+                <p>I'm a Full-Stack Web Developer Jr in Chihuahua,Chihuahua México.
+                   I have serious passion for Web Development, also I have developed mobile apps and
+                   SaaS, <a  href="url">Let's work together.</a>
+                </p>
+            </div>
+        </div>
+        <div class="col-xl-6 mt-2">
+            <div  class="progressBar mt-3" *ngFor="let item of programs" data-aos="zoom-out">
+                <div class="innerBar" [ngStyle]="{width: item.percentage}">
+                    <div class="progressBar-name">{{item.name}}</div>
+                </div>
+                <span style="padding-right: 2%;">{{item.percentage}}</span>
+            </div>
+        </div>
+     </div>
+   
+
