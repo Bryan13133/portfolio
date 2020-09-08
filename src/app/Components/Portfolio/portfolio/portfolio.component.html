@@ -2,3 +2,21 @@
     <h1>PORTFOLIO</h1>
     <div class="portfolio-bar"></div>
 </div>
+<div class="row mt-3">
+    <div class="col-xl-12">
+        <div class="row" style="padding-right: 13%;padding-left: 13%;">
+            <div class="col-xl-4"*ngFor="let p of proyects"  style="padding-right: 0%; padding-left: 0%;">
+                <div class="image-container">
+                    <img class="image-container-img" src={{p.photo}}/>
+                       <div class="center">
+                            <h2>{{p.name}}</h2>
+                            <h4>{{p.language}}</h4>
+                            <button class="banner-text-btn ">View Site</button>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</div>
+

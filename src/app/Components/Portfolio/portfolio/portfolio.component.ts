@@ -12,4 +12,10 @@ export class PortfolioComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  proyects = [
+    {name: 'COVID-19 Statistics',language:'AngularJS',photo:'assets/Images/statistics.jpg'},
+    {name: 'Enagena',language:'AngularJS/School Project',photo:'assets/Images/enagena.jpg'},
+    {name: 'D-Plastico',language:'AngularJS/School Project',photo:'assets/Images/statistics.jpg'}
+  ]
+
 }
